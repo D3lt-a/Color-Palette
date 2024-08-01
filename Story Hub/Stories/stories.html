@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Stories</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="stories.html" class="active">Stories</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <h2>Post a New Story</h2>
+            <form id="storyForm" onsubmit="return postStory()">
+                <label for="storyTitle">Title:</label>
+                <input type="text" id="storyTitle" name="storyTitle" placeholder="Enter story title" required>
+                
+                <label for="storyContent">Content:</label>
+                <textarea id="storyContent" name="storyContent" rows="5" placeholder="Write your story here" required></textarea>
+                
+                <button type="submit">Post Story</button>
+            </form>
+        </section>
+
+        <section class="stories-section">
+            <h2>Existing Stories</h2>
+            <div id="storyList"></div>
+        </section>
+    </main>
+    
+    <script src="stories.js"></script>
+</body>
+</html>

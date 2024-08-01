@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Story Hub</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="stories.html">Stories</a>
+            <a href="admin-login.html">Admin</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Welcome to Story Hub</h2>
+            <p>Your go-to place for reading and sharing stories.</p>
+            <a href="stories.html" class="button">Explore Stories</a>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <div class="feature">
+                <h3>Read Stories</h3>
+                <p>Explore a wide range of stories written by users from around the world.</p>
+                <a href="stories.html" class="button">Read Now</a>
+            </div>
+            <div class="feature">
+                <h3>Post Your Own</h3>
+                <p>Share your own stories with our community and get feedback.</p>
+                <a href="stories.html" class="button">Post Your Story</a>
+            </div>
+            <div class="feature">
+                <h3>Admin Panel</h3>
+                <p>Manage users and view statistics from the admin panel.</p>
+                <a href="admin-login.html" class="button">Admin Login</a>
+            </div>
+        </section>
+
+        <section class="recent-updates">
+            <h2>Recent Updates</h2>
+            <div id="recentStories"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Story Hub. All rights reserved.</p>
+    </footer>
+    
+    <script src="home.js"></script>
+</body>
+</html>
