@@ -48,3 +48,8 @@ function displayStories() {
         storyList.appendChild(storyItem);
     });
 }
+
+/* 
+    TODO
+    -Check the Author username
+*/

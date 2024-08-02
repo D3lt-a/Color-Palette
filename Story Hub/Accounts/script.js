@@ -28,7 +28,7 @@ function registerUser() {
 
         users.push(user);
         localStorage.setItem('users', JSON.stringify(users));
-        window.location.href = 'Home Page Layout/home.html';
+        window.location.href = '../Home Page Layout/home.html';
     } else {
         alert('All fields are required!!');
     }
@@ -44,7 +44,7 @@ function loginUser() {
 
     if (user) {
         sessionStorage.setItem('loggedIn', 'true');
-        window.location.href = "LoggedIn.html";
+        window.location.href = "../Home Page Layout/home.html";
     } else {
         alert('Invalid Credentials');
         window.location.href = 'Register.html';
@@ -133,7 +133,7 @@ function loginUser() {
 function logoutUser() {
     const loginTime = sessionStorage.getItem('loginTime');
     const logoutTime = Date.now();
-    const timeSpent = (logoutTime - loginTime) / 60000; // convert milliseconds to minutes
+    const timeSpent = (logoutTime - loginTime) / 60000; 
 
     let users = JSON.parse(localStorage.getItem('users')) || [];
     const currentUser = sessionStorage.getItem('currentUser');
@@ -152,3 +152,9 @@ function logoutUser() {
 }
 
 document.getElementById('logout').addEventListener('click', logoutUser);
+
+/* 
+    TODO
+    - Add time spent to each user
+    - Add logout button to the logout page(make it)
+*/
