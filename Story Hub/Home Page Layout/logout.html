@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Story Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Logout</h1>
+    </header>
+    <main>
+        <section class="logout-section">
+            <h2>Are you sure you want to logout?</h2>
+            <button onclick="logout()">Yes, Logout</button>
+            <button onclick="cancelLogout()">Cancel</button>
+        </section>
+        <section class="login-section">
+            <h2>Login to an existing account</h2>
+            <form id="loginForm" onsubmit="return login()">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Story Hub. All rights reserved.</p>
+    </footer>
+    <script src="logout.js"></script>
+</body>
+</html>

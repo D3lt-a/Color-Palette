@@ -123,7 +123,7 @@ function loginUser() {
         sessionStorage.setItem('loggedIn', 'true');
         sessionStorage.setItem('loginTime', Date.now());
         sessionStorage.setItem('currentUser', loginusername);
-        window.location.href = "LoggedIn.html";
+        window.location.href = "../Home Page Layout/home.html";
     } else {
         alert('Invalid Credentials');
         window.location.href = 'Register.html';

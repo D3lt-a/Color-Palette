@@ -127,6 +127,60 @@ main {
     border-bottom: none;
 }
 
+/* Logout Page Styles */
+.logout-section, .login-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.logout-section h2, .login-section h2 {
+    margin-top: 0;
+}
+
+.logout-section button, .login-section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.logout-section button:hover, .login-section button:hover {
+    background-color: #0056b3;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.login-section button {
+    width: 100%;
+}
+
+
 /* Footer */
 footer {
     background-color: transparent;
