@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+
+  .dark-mode {
+    background-color: #222;
+    color: white;
+  }
+  
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .pallet {
+    width: 250px;
+    height: 150px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #999;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 900px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  
+  .savedColors {
+    margin-top: 30px;
+  }
+  
+  .savedColors details {
+    width: 100%;
+    max-width: 90rem;
+  }
+  
+  .savedColors ul {
+    list-style: none;
+  }
+  
+  .savedColors li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .pallet {
+      width: 100px;
+      height: 100px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
